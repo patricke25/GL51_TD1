@@ -7,6 +7,8 @@ import gl51.service.PictureService
 import javax.inject.Inject
 
 class PictureResizeServiceImpl implements PictureResizeService {
+
+
     @Inject PictureService pictureService
 
     @Override

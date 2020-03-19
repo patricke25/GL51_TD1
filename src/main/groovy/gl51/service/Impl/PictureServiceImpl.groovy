@@ -6,6 +6,7 @@ import gl51.service.PictureService
 @Singleton
 
 class PictureServiceImpl implements PictureService {
+    //Récupère l'image
     @Override
     Picture fetchPicture(){return null}
 }
