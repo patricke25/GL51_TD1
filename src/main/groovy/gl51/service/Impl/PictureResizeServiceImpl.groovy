@@ -6,8 +6,11 @@ import gl51.service.PictureService
 
 import javax.inject.Inject
 
+@Singleton
 class PictureResizeServiceImpl implements PictureResizeService {
-
+/*
+    Cette classe gére le redimensionnement au format 1024*1024
+ */
 
     @Inject PictureService pictureService
 
