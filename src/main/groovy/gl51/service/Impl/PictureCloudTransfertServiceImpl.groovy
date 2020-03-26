@@ -7,6 +7,7 @@ import gl51.service.PictureThumbnailService
 
 import javax.inject.Inject
 
+@Singleton
 class PictureCloudTransfertServiceImpl implements PictureCloudTransfertService{
 
     @Inject PictureResizeService resizeService
