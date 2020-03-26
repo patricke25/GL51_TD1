@@ -7,6 +7,7 @@ import gl51.service.PictureThumbnailService
 
 import javax.inject.Inject
 
+@Singleton
 class PictureThumbnailServiceImpl implements PictureThumbnailService{
     @Inject PictureService pictureService
     @Inject PictureFiligraneService pictureFiligrane
