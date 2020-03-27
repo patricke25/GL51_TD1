@@ -12,6 +12,7 @@ class MoovieRegistryImpl implements gl51.moovie.service.MoovieRegistry {
     @Override
     void addMoovieToFavorite(String imdbID) {
         internalRegistry << new Moovie(imdbID: imdbID ) // ajoute a la liste
+        // appel a registry
 
     }
 
