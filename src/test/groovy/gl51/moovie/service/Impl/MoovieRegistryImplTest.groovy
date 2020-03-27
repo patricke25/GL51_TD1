@@ -25,7 +25,7 @@ class MoovieRegistryImplTest extends Specification {
         when:
             registry.addMoovieToFavorite("aaaaa")
         then:
-            registry.listFavorite().size() == 1
+            registry.listFavorite().size() == 2
     }
     // mock qui remplace moovie registry
 }
