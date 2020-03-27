@@ -20,7 +20,6 @@ class MoovieRegistryImpl implements gl51.moovie.service.MoovieRegistry {
         System.out.println("ee")
         internalRegistry
 
-
     }
 
 }
