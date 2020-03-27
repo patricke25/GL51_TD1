@@ -17,6 +17,8 @@ class MoovieRegistryImpl implements gl51.moovie.service.MoovieRegistry {
 
     @Override
     List<Moovie> listFavorite() {
+        System.out.println("ee")
         internalRegistry
     }
+
 }
