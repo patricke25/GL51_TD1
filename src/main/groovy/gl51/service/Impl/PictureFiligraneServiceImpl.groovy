@@ -2,6 +2,7 @@ package gl51.service.Impl
 
 import gl51.service.PictureFiligraneService
 
+@Singleton
 class PictureFiligraneServiceImpl implements  PictureFiligraneService {
 
     @Override

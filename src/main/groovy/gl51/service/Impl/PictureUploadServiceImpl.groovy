@@ -6,6 +6,7 @@ import gl51.service.PictureUploadService
 
 import javax.inject.Inject
 
+@Singleton
 class PictureUploadServiceImpl implements PictureUploadService{
 
     @Inject PictureDbUpdateService dbUpdateService
