@@ -46,8 +46,11 @@ class MovieControllerSpec extends Specification {
         HttpResponse response = client.toBlocking().exchange(
                 HttpRequest.POST("/movie", new MovieRequest(imdbId: "aaaaa"))
         )
+        //Flowable flowable = client.retrieve(HttpRequest.GET("/movie"), Argument.listOf(Movie))
+        //def content = flowable.firstElement().blockingGet()
         expect:
         response.status == HttpStatus.CREATED
+       //content.find
         registry.listFavorites().find{ it.title == 'my movie'}
         registry.listFavorites().size() == 1
     }
