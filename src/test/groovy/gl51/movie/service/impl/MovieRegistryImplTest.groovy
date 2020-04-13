@@ -5,7 +5,6 @@ import gl51.movie.service.MovieClient
 import io.micronaut.test.annotation.MicronautTest
 import io.micronaut.test.annotation.MockBean
 import spock.lang.Specification
-
 import javax.inject.Inject
 
 @MicronautTest
