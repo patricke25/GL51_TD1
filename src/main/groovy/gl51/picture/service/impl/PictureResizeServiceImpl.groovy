@@ -1,4 +1,4 @@
-package gl51.picture.service.Impl
+package gl51.picture.service.impl
 
 import gl51.picture.data.Picture
 import gl51.picture.service.PictureResizeService
@@ -14,8 +14,8 @@ class PictureResizeServiceImpl implements PictureResizeService {
     @Override
     Picture resize(){
         Picture pic = pictureService.fetchPicture()
-        pic.setPixels_x(1024)
-        pic.setPixels_y(1024)
+        pic.setPixelsX(1024)
+        pic.setPixelsY(1024)
         //resize picture file ....
         pic.setPictureFile()
         return pic

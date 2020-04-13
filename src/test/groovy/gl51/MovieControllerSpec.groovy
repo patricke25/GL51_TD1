@@ -32,7 +32,9 @@ class MovieControllerSpec extends Specification {
     @Inject
     MovieRegistryImpl registry
 
-    void "test index"() {
+
+    void "testIndex"() {
+
         given:
         Flowable flowable = client.retrieve(HttpRequest.GET("/movie"), Argument.listOf(Movie))
         def content = flowable.firstElement()
@@ -40,7 +42,9 @@ class MovieControllerSpec extends Specification {
         content.blockingGet() == []
     }
 
-    void "test film creation"() {
+
+    void "testFilmCreation"() {
+
         given:
         HttpResponse response = client.toBlocking().exchange(
                 HttpRequest.POST("/movie", new MovieRequest(imdbId: "aaaaa"))
