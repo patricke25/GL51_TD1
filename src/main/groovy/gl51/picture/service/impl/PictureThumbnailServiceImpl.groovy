@@ -1,4 +1,4 @@
-package gl51.picture.service.Impl
+package gl51.picture.service.impl
 
 import gl51.picture.data.Picture
 import gl51.picture.service.PictureFiligraneService
@@ -17,8 +17,8 @@ class PictureThumbnailServiceImpl implements PictureThumbnailService{
         //resize pictureFile
         pic.setPictureFile(null)
         pictureFiligrane.apllyFiligrane(pic.getPictureFile())
-        pic.setPixels_x(50)
-        pic.setPixels_y(50)
+        pic.setPixelsX(50)
+        pic.setPixelsY(50)
         return(pic)
     }
 }

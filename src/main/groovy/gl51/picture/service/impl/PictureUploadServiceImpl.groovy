@@ -1,4 +1,4 @@
-package gl51.picture.service.Impl
+package gl51.picture.service.impl
 
 import gl51.picture.service.PictureCloudTransfertService
 import gl51.picture.service.PictureDbUpdateService
