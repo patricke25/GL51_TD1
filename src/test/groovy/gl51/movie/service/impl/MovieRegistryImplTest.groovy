@@ -5,6 +5,7 @@ import gl51.movie.service.MovieClient
 import io.micronaut.test.annotation.MicronautTest
 import io.micronaut.test.annotation.MockBean
 import spock.lang.Specification
+
 import javax.inject.Inject
 
 @MicronautTest
@@ -13,17 +14,23 @@ class MovieRegistryImplTest extends Specification {
     @Inject
     MovieRegistryImpl registry
 
+
     void "injectionShouldWork"() {
+
         expect:
         registry != null
     }
 
+
     void "favoritesShouldBeEmpty"() {
+
         expect:
         registry.listFavorites() == []
     }
 
+
     void "addingAFavoriteShouldFillInTheDatabase"() {
+
         when:
         registry.addMovieToFavorites("aaaaa")
         then:
